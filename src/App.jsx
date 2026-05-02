@@ -1,16 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import React from 'react';
+import { Navbar } from './components/organisms/Navbar';
+import { HeroSection } from './components/organisms/HeroSection';
+import { WhatIDoSection } from './components/organisms/WhatIDoSection';
+import { ProjectsSection } from './components/organisms/ProjectsSection';
+import { ExperienceSection } from './components/organisms/ExperienceSection';
+import { AboutSection } from './components/organisms/AboutSection';
+import { Footer } from './components/organisms/Footer';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-   <>
-   <div className='text-red'>Hello Rodip</div></>
-  )
+    <div className="app-container">
+      <Navbar />
+      <main>
+        <HeroSection />
+        <WhatIDoSection />
+        <ProjectsSection />
+        <ExperienceSection />
+        <AboutSection />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

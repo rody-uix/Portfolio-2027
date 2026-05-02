@@ -1,0 +1,38 @@
+:root {
+  /* Colors */
+  --color-black: #0C0C0C;
+  --color-pure-black: #000000;
+  --color-white: #FFFFFF;
+  
+  --color-pink: #FFC9F0;
+  --color-pink-border: #F384D4;
+  --color-pink-dark: #F072CD;
+  --color-pink-dark-border: #DB4A90;
+
+  --color-yellow: #FFE68C;
+  --color-yellow-border: #EECD56;
+
+  --color-blue: #9DDCFF;
+  --color-blue-border: #5AB5E8;
+
+  --color-green: #6AE36A;
+
+  /* Typography */
+  --font-handlee: 'Handlee', cursive;
+  --font-inter: 'Inter', sans-serif;
+  --font-space: 'Space Grotesk', sans-serif;
+
+  /* Spacing & Borders */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 26.85px;
+  --border-width-thin: 0.5px;
+  --border-width-thick: 3px;
+  --border-width-xl: 5px;
+
+  /* Shadows */
+  --shadow-sm: 1px 1px 11.2px 0px rgba(0, 0, 0, 0.08);
+  --shadow-md: 3px 3px 12px 0px rgba(0, 0, 0, 0.12);
+  --shadow-yellow: 5px 5px 20px 0px rgba(255, 230, 140, 0.13);
+  --shadow-blue: 5px 5px 20px 0px rgba(157, 220, 255, 0.15);
+}

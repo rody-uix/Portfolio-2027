@@ -1,0 +1,83 @@
+.experience-section {
+  padding: 100px 0;
+  width: 100%;
+}
+
+.experience-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 8%;
+  display: flex;
+  gap: 80px;
+}
+
+.experience-header-wrapper {
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.experience-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.experience-subtitle {
+  font-size: 24px;
+  line-height: 1.4;
+  color: var(--color-black);
+}
+
+.experience-illustration-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -60px; /* Pull it closer to the subtitle */
+  width: 400px;
+  height: 400px;
+  margin-left: -30px; /* Align visual center */
+}
+
+.experience-illustration-container > * {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.experience-timeline {
+  flex: 1;
+  position: relative;
+}
+
+.timeline-box {
+  border: 2px solid var(--color-black);
+  padding: 40px;
+  position: relative;
+}
+
+/* The cross lines at the corners of the box as seen in the image */
+.timeline-box::before,
+.timeline-box::after {
+  content: '';
+  position: absolute;
+  background-color: var(--color-black);
+}
+
+/* We could add pseudo elements to extend the borders to look like the drawn box, but for simplicity, a solid border works. 
+To mimic the extended cross lines: */
+.timeline-box::before {
+  top: -20px; left: -20px; right: -20px; bottom: -20px;
+  border: 1px solid var(--color-black);
+  background: none;
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .experience-container {
+    flex-direction: column;
+  }
+  
+  .experience-header-wrapper {
+    flex: none;
+  }
+}

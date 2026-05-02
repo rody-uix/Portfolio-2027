@@ -1,0 +1,11 @@
+.file-box-wrapper {
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mix-blend-mode: multiply;
+}

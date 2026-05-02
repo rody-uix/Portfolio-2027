@@ -1,0 +1,33 @@
+.about-section {
+  padding: 100px 0;
+  width: 100%;
+}
+
+.about-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.about-header {
+  align-self: flex-start;
+}
+
+.polaroids-container {
+  position: relative;
+  height: 800px; /* Need a fixed height since children are absolute */
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .polaroids-container {
+    position: static;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

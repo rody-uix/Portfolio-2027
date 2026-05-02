@@ -1,0 +1,69 @@
+.projects-section {
+  padding: 100px 0;
+  width: 100%;
+}
+
+.projects-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 8%;
+  display: flex;
+  gap: 80px;
+}
+
+.projects-header-wrapper {
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.projects-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.projects-subtitle {
+  font-size: 24px;
+  line-height: 1.4;
+  color: var(--color-black);
+}
+
+.projects-illustration-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -100px; /* Pull it closer to the subtitle */
+  width: 400px;
+  height: 400px;
+  margin-left: -30px; /* Pull it slightly left to align the visual center */
+}
+
+/* Ensure the Lottie canvas scales properly */
+.projects-illustration-container > * {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.projects-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 1024px) {
+  .projects-container {
+    flex-direction: column;
+  }
+  
+  .projects-header-wrapper {
+    flex: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
