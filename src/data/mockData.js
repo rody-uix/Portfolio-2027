@@ -165,6 +165,6 @@ export const footerData = {
   playgroundText: "A space where I experiment, build, and test ideas, pushing design concepts, interactions, and creative boundaries without limits.",
   repeatedText: "Designing with intent today as I quietly build the studio of tomorrow",
   name: "rodip chettri",
-  socials: ["X", "LinkedIn", "Instagram", "Topmate", "Pinterest"],
+  socials: ["X", "LinkedIn", "Instagram", "Topmate", "Pinterest", "Behance", "Dribbble"],
   closing: "Thank you"
 };
